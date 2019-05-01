@@ -15,5 +15,3 @@ def g(x, y):
     return(x - y)
 
 print(g(5,2))
-
-print()
