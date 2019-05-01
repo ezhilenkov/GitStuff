@@ -5,13 +5,18 @@
 Это временный скриптовый файл.
 """
 
+from __future__ import print_function
 
-def f(x, y):
-    return(x + y)
+def f(x, y, op):
+    if op == '-':
+        return(x - y)
+    elif op == '/':
+        return(x / y)
+    else:
+        return('unknown operation')
+        
+x = int(input('введите первое число '))
+a = int(input('введите второе число '))
+op = input('выберете операцию "/" или "-": ')
 
-print(f(3, 4))
-
-def g(x, y):
-    return(x - y)
-
-print(g(5,2))
+print(f(x, a, op))
