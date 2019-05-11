@@ -15,8 +15,8 @@ def f(x, y, op):
     else:
         return('unknown operation')
         
-x = int(input('vvedite pervoe chislo '))
-a = int(input('введите второе число '))
+x = int(input('vvedite pervoe chislo: '))
+a = int(input('vvedite vtoroye chislo: '))
 op = input('выберете операцию "/" или "-": ')
 
 print(f(x, a, op))
